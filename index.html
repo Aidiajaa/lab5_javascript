@@ -1,0 +1,42 @@
+<!-- index.html --> 
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Praktikum JavaScript</title> 
+</head> 
+<body> 
+    <h1>Pengenalan JavaScript</h1> 
+    <p id="pesan">Konten awal.</p> 
+
+    <label for="bilangan">Masukkan bilangan bulat:</label> 
+    <input type="number" id="bilangan" step="1"> 
+    <button type="button" onclick="cekBilangan()">Periksa</button> 
+    <p id="hasilBilangan"></p>
+
+    <button type="button" onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button> 
+    <button type="button" onclick="ubahWarnaLatar('white')">Latar Putih</button> 
+    <button type="button" onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
+
+    <h3>Daftar Menu Makanan</h3> 
+    <label><input type="checkbox" class="menu" value="5000"> Ayam Goreng — Rp5.000</label><br> 
+    <label><input type="checkbox" class="menu" value="500"> Tempe — Rp500</label><br> 
+    <label><input type="checkbox" class="menu" value="2500"> Telur Dadar — Rp2.500</label><br> 
+    <label><input type="checkbox" class="menu" value="1000"> kentang balado — Rp1.000</label><br> 
+    <label><input type="checkbox" class="menu" value="3000"> tempe oreg — Rp3.000</label><br> 
+    <p>Total: Rp<span id="total">0</span></p> 
+
+    <div style="margin-top: 15px;">
+        <label for="kolomInput">Input Teks:</label>
+        <input type="text" id="kolomInput" placeholder="Ketik sesuatu di sini...">
+        <button type="button" onclick="validasiForm()">Kirim</button>
+        <p id="pesanStatus"></p>
+    </div>
+
+    <button type="button" onclick="toggleElemen()">Sembunyikan / Tampilkan Teks</button>
+    <p id="teksInfo">Teks ini dapat disembunyikan dan ditampilkan kembali.</p>
+
+    <script src="script.js"></script> 
+</body> 
+</html> 
